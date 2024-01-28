@@ -19,9 +19,9 @@ class _PCOSTestViewState extends State<PCOSTestView> {
     'Dark patches on the back of your neck or underarms?',
     'Feeling of tiredness all the time?',
     'Mood Swings more often than usual?',
-    'How many days in a week did you exercise?',
-    'How many times a week did you eat outside?',
-    'Did you consume canned food more often?'
+    'Do you exercise more than twice a week?',
+    'Do you eat outside more than twice a week?',
+    'Did you consume canned food more often?',
   ];
 
   List<bool?> answers = List<bool?>.filled(12, null);
@@ -164,17 +164,19 @@ class PCOSResultPage extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => PCOSDetailsPage(),
-                    ),
-                  );
-                },
-                child: Text("Learn More"),
-              ),
+              if (percentage > 50) ...[
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => PCOSDetailsPage(percentage),
+                      ),
+                    );
+                  },
+                  child: Text("Learn More"),
+                ),
+              ],
             ],
           ),
         ),
@@ -194,11 +196,32 @@ class PCOSResultPage extends StatelessWidget {
 }
 
 class PCOSDetailsPage extends StatelessWidget {
+  final double percentage;
+
+  const PCOSDetailsPage(this.percentage);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('PCOS Details'),
+        title: Text(''),
+        // Centering the button in the AppBar
+        actions: [
+          Align(
+            alignment: Alignment.center,
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => NearestGynecologistPage(percentage),
+                  ),
+                );
+              },
+              child: Text("Find Nearest Gynecologists"),
+            ),
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20.0),
@@ -239,4 +262,168 @@ class PCOSDetailsPage extends StatelessWidget {
       ),
     );
   }
+}
+
+class NearestGynecologistPage extends StatefulWidget {
+  final double percentage;
+
+  const NearestGynecologistPage(this.percentage);
+
+  @override
+  _NearestGynecologistPageState createState() =>
+      _NearestGynecologistPageState();
+}
+
+class _NearestGynecologistPageState extends State<NearestGynecologistPage> {
+  List<Map<String, dynamic>> gynecologists = [];
+  bool isLoading = true;
+
+  @override
+  void initState() {
+    super.initState();
+    // Simulate fetching data (replace this with your actual API call)
+    Future.delayed(Duration(seconds: 2), () {
+      setState(() {
+        gynecologists = [
+          {
+            'name': 'Dr. Shabnam Singh',
+            'specialization': 'M.S.(GYNECOLOGY), M.B.B.S, Women’s Care ',
+            'address':
+                'Women’s Care Clinic, 107 Sundaram building, Sion Cir, E',
+            'contact': ' 098203 00842',
+            'rating': '4.5',
+            'reviews': '120',
+            'workingHours': '9 AM - 5 PM',
+            'services': [
+              'Prenatal care',
+              'Family planning',
+              'Menopause management'
+            ],
+            'languages': ['English', 'Hindi'],
+            'image': 'assets/img/doctor_profile1.png',
+          },
+          {
+            'name': 'Dr. Tanushree Pandey Padgaonka',
+            'specialization': 'IVF & PCOS Treatment',
+            'address': ' Lions Club Hopsital, Sion (W)',
+            'contact': '077770 82378',
+            'rating': '4.2',
+            'reviews': '90',
+            'workingHours': '10 AM - 6 PM',
+            'services': [
+              'Maternity care',
+              'Contraception counseling',
+              'Gynecological surgery'
+            ],
+            'languages': ['English', 'Marathi'],
+            'image': 'assets/img/doctor_profile2.png',
+          },
+          {
+            'name': 'Dr. Patel',
+            'specialization': 'Reproductive Endocrinology',
+            'address': '789 Pine St, Villageland',
+            'contact': '567-890-1234',
+            'rating': '4.8',
+            'reviews': '150',
+            'workingHours': '8 AM - 4 PM',
+            'services': [
+              'Fertility treatments',
+              'Hormone therapy',
+              'Polycystic ovary syndrome'
+            ],
+            'languages': ['English', 'Hindi'],
+            'image': 'assets/img/doctor_profile3.png',
+          },
+          {
+            'name': 'Dr. Garcia',
+            'specialization': 'Gynecologic Oncology',
+            'address':
+                'Surgical Nursing Home D3/D2, Vijay Nagar, Marol Maroshi Rd',
+            'contact': '234-567-8901',
+            'rating': '4.9',
+            'reviews': '180',
+            'workingHours': '8:30 AM - 5:30 PM',
+            'services': [
+              'Cancer screenings',
+              'Robotic surgery',
+              'Chemotherapy'
+            ],
+            'languages': ['English', 'Spanish'],
+            'image': 'assets/img/doctor_profile4.png',
+          },
+          // Add more doctors with a similar structure
+        ];
+        isLoading = false;
+      });
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Nearest Gynecologists'),
+      ),
+      body: isLoading
+          ? Center(child: CircularProgressIndicator())
+          : gynecologists.isNotEmpty
+              ? ListView.builder(
+                  itemCount: gynecologists.length,
+                  itemBuilder: (context, index) {
+                    final gynecologist = gynecologists[index];
+                    return Card(
+                      elevation: 2.0,
+                      margin: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage:
+                              AssetImage(gynecologist['image'] ?? ''),
+                        ),
+                        title: Text(
+                          gynecologist['name'] ?? '',
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        subtitle: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(gynecologist['specialization'] ?? ''),
+                            Text(gynecologist['address'] ?? ''),
+                            Text('Contact: ${gynecologist['contact'] ?? ''}'),
+                            Text(
+                                'Rating: ${gynecologist['rating'] ?? ''} (${gynecologist['reviews'] ?? ''} reviews)'),
+                            Text(
+                                'Working Hours: ${gynecologist['workingHours'] ?? ''}'),
+                            SizedBox(height: 8),
+                            Text('Services:',
+                                style: TextStyle(fontWeight: FontWeight.bold)),
+                            ...(gynecologist['services'] ?? [])
+                                .map((service) => Text('- $service')),
+                            SizedBox(height: 8),
+                            Text('Languages spoken:',
+                                style: TextStyle(fontWeight: FontWeight.bold)),
+                            ...(gynecologist['languages'] ?? [])
+                                .map((language) => Text('- $language')),
+                            SizedBox(height: 16),
+                            ElevatedButton(
+                              onPressed: () {
+                                // Add logic for booking appointment
+                                // You can navigate to a new page or show a dialog for booking
+                              },
+                              child: Text('Book Appointment'),
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  },
+                )
+              : Center(child: Text('No doctors found nearby')),
+    );
+  }
+}
+
+void main() {
+  runApp(MaterialApp(
+    home: PCOSTestView(),
+  ));
 }
