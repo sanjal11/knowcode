@@ -320,294 +320,87 @@
                                     On the basis of these factors that you may answer about in our form below, we inform you whether you are at risk of cervical cancer or not. We
                                     facilitate this by providing predictions for four cervical cancer tests, which may be quite expensive otherwise.
                                 </p>
-                                <ul class="mbr-text mbr-fonts-style display-7">
-                                    <li>
-                                        <strong>Hinselmann test</strong> - This examines the tissues by illuminating and magnifying is using a colposcope.
-                                    </li>
-                                    <li>
-                                        <strong>Schiller test</strong> - Schiller's test or Schiller's Iodine test is a medical test in which iodine solution
-                                         is applied to the cervix in order to diagnose cervical cancer.
-                                    </li>
-                                    <li>
-                                        <strong>Cytology test</strong> - This is the examination of suspected cells from the body under a microscope.
-                                    </li>
-                                    <li>
-                                        <strong>Biopsy</strong> - This is the final test. The process involves extraction of sample cells or tissues for examination to determine the 
-                                        presence or extent of a disease.
-                                    </li>
-                                </ul>
+                                
                                 <form class="pcos-form" method="post">
-                                    <div>
-                                        <h5>Age:</h5>
-                                        <input type="number" name="age"  class="ques-number" >
-
-                                        <h5>Number of sexual partners:</h5>
-                                        <input type="number" name="sexual_no" class="ques-number" >
-
-                                        <h5>Age of first sexual intercourse:</h5>
-                                        <input type="number" name="sexual_age" class="ques-number">
-
-                                        <h5>Number of pregnancies:</h5>
-                                        <input type="number" name="preg_no" class="ques-number">
-                                    </div>
-                                    <div>
-                                        <h5>Do you smoke?</h5>
-                                        <input type="radio" name="smoke" class="ques-radio" value="1">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="smoke" class="ques-radio" value="0">
-                                        <label class="ques-label" >No</label>
-
-                                        <h5>Number of years for which you have been smoking:</h5>
-                                        <input type="number" name="smoke_years" class="ques-number">
-                                        <h5>Number of packets of cigarettes you smoke per year:</h5>
-                                        <input type="number" name="smoke_yearss" class="ques-number">
-                                    </div>
-                                    <div>
-                                        <h5>Do you take any hormonal contraceptives?</h5>
-                                        <input type="radio" name="h_cont" class="ques-radio" value="1">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="h_cont" class="ques-radio" value="0">
-                                        <label class="ques-label" >No</label>
-
-                                        <h5>Number of years for which you have been taking hormonal contraceptives:</h5>
-                                        <input type="number" name="h_cont_years" class="ques-number">
-
-                                        <h5>Do you have any Intra-uterine Devices(IUDs)?</h5>
-                                        <input type="radio" name="IUD" class="ques-radio" value="1">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="IUD" class="ques-radio" value="0">
-                                        <label class="ques-label" >No</label>
-
-                                        <h5>Number of years for which you have had IUDs:</h5>
-                                        <input type="number" name="IUD_years" class="ques-number">
-                                    </div>
-                                    <div>
-                                        <h5>Do you have any STDs?</h5>
-                                        <input type="radio" name="STD" class="ques-radio" value="1">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="STD" class="ques-radio" value="0">
-                                        <label class="ques-label" >No</label>
-
-                                        <h5>Number of STDs you have:</h5>
-                                        <input type="number" name="STD_no" class="ques-number">
-
-                                        <h5>Do you have condylomatosis?</h5>
-                                        <input type="radio" name="STD_c" class="ques-radio" value="1">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="STD_c" class="ques-radio" value="0">
-                                        <label class="ques-label" >No</label>
-
-                                        <h5>Do you have vaginal condylomatosis?</h5>
-                                        <input type="radio" name="STD_vc" class="ques-radio" value="1">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="STD_vc" class="ques-radio" value="0">
-                                        <label class="ques-label" >No</label>
-
-                                        <h5>Do you have vulvao perineal condylomatosis?</h5>
-                                        <input type="radio" name="STD_vpc" class="ques-radio" value="1">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="STD_vpc" class="ques-radio" value="0">
-                                        <label class="ques-label" >No</label>
-
-                                        <h5>Do you have syphilis?</h5>
-                                        <input type="radio" name="STD_sy" class="ques-radio" value="1">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="STD_sy" class="ques-radio" value="0">
-                                        <label class="ques-label" >No</label>
-
-                                        <h5>Do you have any pelvic inflamatory disease?</h5>
-                                        <input type="radio" name="STD_pid" class="ques-radio" value="1">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="STD_pid" class="ques-radio" value="0">
-                                        <label class="ques-label" >No</label>
-
-                                        <h5>Do you have genital herpes?</h5>
-                                        <input type="radio" name="STD_hp" class="ques-radio" value="1">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="STD_hp" class="ques-radio" value="0">
-                                        <label class="ques-label" >No</label>
-
-                                        <h5>Do you have molluscum contagiosum?</h5>
-                                        <input type="radio" name="STD_mc" class="ques-radio" value="1">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="STD_mc" class="ques-radio" value="0">
-                                        <label class="ques-label" >No</label>
-
-                                        <h5>Do you have HIV?</h5>
-                                        <input type="radio" name="STD_hiv" class="ques-radio" value="1">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="STD_hiv" class="ques-radio" value="0">
-                                        <label class="ques-label" >No</label>
-
-                                        <h5>Do you have HepatitisB?</h5>
-                                        <input type="radio" name="STD_hptb" class="ques-radio" value="1">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="STD_hptb" class="ques-radio" value="0">
-                                        <label class="ques-label" >No</label>
-
-                                        <h5>Do you have Human papillomavirus (HPV)?</h5>
-                                        <input type="radio" name="STD_hpv" class="ques-radio" value="1">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="STD_hpv" class="ques-radio" value="0">
-                                        <label class="ques-label" >No</label>
-
-                                        <h5>Number of Diagnosis of STDs:</h5>
-                                        <input type="number" name="STD_noD" class="ques-number">
-                                    </div>
-                                    <div>
-                                        <h5>Have you ever had a diagnosis of cancer?</h5>
-                                        <input type="radio" name="cancerE" class="ques-radio" value="1">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="cancerE" class="ques-radio" value="0">
-                                        <label class="ques-label" >No</label>
-
-                                        <h5>Have you ever had a diagnosis of Cervical Intraepithelial neoplasia(CIN)?</h5>
-                                        <input type="radio" name="CIND" class="ques-radio" value="1">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="CIND" class="ques-radio" value="0">
-                                        <label class="ques-label" >No</label>
-
-                                        <h5>Have you ever had a diagnosis of Human papillomavirus (HPV)?</h5>
-                                        <input type="radio" name="HPVD" class="ques-radio" value="1">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="HPVD" class="ques-radio" value="0">
-                                        <label class="ques-label" >No</label>
-
-                                        <h5>Have you ever had a diagnosis of any other major reproductive issue?</h5>
-                                        <input type="radio" name="otherD" class="ques-radio" value="1">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="otherD" class="ques-radio" value="0">
-                                        <label class="ques-label" >No</label>
-                                    </div>
+                                <label>Select risk factors:</label>
+        <div>  
+        <input type="checkbox" name="selectedOptions[]" value="Your age is over 30"> 
+        <label>Your age is over 30</label>
+        </div>
+        <div>
+        <input type="checkbox" name="selectedOptions[]" value="Number of sexual partners is >3"> 
+        <label>Number of sexual partners is >3</label>
+        </div>
+        <div>
+        <input type="checkbox" name="selectedOptions[]" value="You have multiple pregnancies and a history of full-term pregnancies"> 
+        <label>You have multiple pregnancies and a history of full-term pregnancies</label>
+        </div>
+        <div>
+        <input type="checkbox" name="selectedOptions[]" value="Smokes cigarettes often"> 
+        <label>Smokes cigarettes often</label>
+        </div>
+        <div>
+        <input type="checkbox" name="selectedOptions[]" value="Smokes cigarettes for more than 1 hr a day"> 
+        <label>Smokes cigarettes for more than 1 hr a day</label>
+        </div>
+        <div>
+        <input type="checkbox" name="selectedOptions[]" value="Consumes hormonal contraceptives often"> 
+        <label>Consumes hormonal contraceptives often</label>
+        </div>
+        <div>
+        <input type="checkbox" name="selectedOptions[]" value="Has a history of sexually transmitted infections, especially persistent high-risk HPV infections"> 
+        <label>Has a history of sexually transmitted infections, especially persistent high-risk HPV infections</label>
+        </div>
+        <div>
+        <input type="checkbox" name="selectedOptions[]" value="Has a History of HPV Vaccination"> 
+        <label>Has a History of HPV Vaccination</label>
+        </div>
                                     <button type="submit" class="btn btn-danger" id="cervical-predict" name="cervical-predict">Predict Possibility Of Cervical Cancer</button>
                                 </form>
                                 <div class="prediction-result">
                                     <!-- <p>Please submit the form above to get a prediction.</p> -->
                                     <?php
                                 // $json1=0;
-    if(isset($_POST['cervical-predict'])){
+    if(isset($_POST['cervical-predict']))
        
-      $o1= $_POST['age'];
-      $o2= $_POST['sexual_no'];
-      $o3= $_POST['sexual_age'];
-      $o4= $_POST['preg_no'];
-      $o5= $_POST['smoke'];
-      $o6= $_POST['smoke_years'];
-      $o60= $_POST['smoke_yearss'];
-      $o7= $_POST['h_cont'];
-      $o8= $_POST['h_cont_years'];
-      $o9= $_POST['IUD'];
-      $o10= $_POST['IUD_years'];
-      $o11= $_POST['STD'];
-      $o12= $_POST['STD_no'];
-      $o13= $_POST['STD_c'];
-      $o14= $_POST['STD_vc'];
-      $o15= $_POST['STD_vpc'];
-      $o16= $_POST['STD_sy'];
-      $o17= $_POST['STD_pid'];
-      $o18= $_POST['STD_hp'];
-      $o19= $_POST['STD_mc'];
-      $o20= $_POST['STD_hiv'];
-      $o21= $_POST['STD_hptb'];
-      $o22= $_POST['STD_hpv'];
-      $o23= $_POST['STD_noD'];
-      $o24= $_POST['cancerE'];
-      $o25= $_POST['CIND'];
-      $o26= $_POST['HPVD'];
-      $o27= $_POST['otherD'];
-      
-      
-     
-       $json2 =  file_get_contents('https://3ff03eccff14.ngrok.io/cervicalcancer/', false, stream_context_create([
-        'http' => [
-            'method' => 'POST',
-            'header'  => "Content-type: application/x-www-form-urlencoded",
-            'content' => http_build_query([
+        {
+            // Process the form data
+            $selectedOptions = isset($_POST["selectedOptions"]) ? $_POST["selectedOptions"] : [];
     
-                "age"=> $o1,
-                "number_of_sexual_partners"=> $o2,
-                "age_of_first_sexual_intercourse"=> $o3,
-                "number_of_pregnancies"=> $o4,
-                "smokes"=> $o5,
-                "smokes_years"=> $o6,
-                "smokes_packs_per_year"=> $o60,
-                "hormonal_contraceptives"=> $o7,
-                "hormonal_contraceptives_years"=> $o8,
-                "IUD"=> $o9,
-                "IUD_years"=> $o10,
-                "STDs"=> $o11,
-                "STDs_number"=> $o12,
-                "STDs_condylomatosis"=> $o13,
-                "STDs_vaginal_condylomatosis"=> $o14,
-                "STDs_vulvo_perineal_condylomatosis"=> $o15,
-                "STDs_syphilis"=> $o16,
-                "STDs_pelvic_inflammatory_disease_"=> $o17,
-                "STDs_genital_herpes"=> $o18,
-                "STDs_molluscum_contagiosum"=> $o19,
-                "STDs_HIV"=> $o20,
-                "STDs_HepatitisB"=> $o21,
-                "STDs_HPV"=> $o22,
-                "STDs_Number_of_diagnosis"=> $o23,
-                "Dx_Cancer"=> $o24,
-                "Dx_CIN"=> $o25,
-                "Dx_HPV"=> $o26,
-                "Dx"=> $o27
-                
-                
+            // Calculate risk percentage based on selected options
+            $riskPercentage = calculateRiskPercentage($selectedOptions);
     
-            ])
-        ]
-    ]));
-
-    
-    $yummy = json_decode($json2);
-        if ($yummy->Hinselmann=='0.0') {
-           echo "<p>Hinselmann is predicted to be negative</p>";
+            // Display the result
+            echo "<p>Your estimated risk percentage: $riskPercentage%</p>";
         }
-       
-        elseif ($yummy->Hinselmann =='1.0') {
-           echo "<p>Hinselmann is predicted to be positive</p>";
+    
+        // Function to calculate risk percentage based on selected options
+        function calculateRiskPercentage($selectedOptions) {
+            // Define risk percentages for each selected option
+            $riskPercentages = [
+                "Your age is over 30" => 10,
+                "Number of sexual partners is >3" => 15,
+                "You have multiple pregnancies and a history of full-term pregnancies" => 12,
+                "Smokes cigarettes often" => 20,
+                "Smokes cigarettes for more than 1 hr a day" => 25,
+                "Consumes hormonal contraceptives often" => 8,
+                "Has a history of sexually transmitted infections, especially persistent high-risk HPV infections" => 30,
+                "Has a History of HPV Vaccination" => -15,  // Negative for protective factor
+            ];
+    
+            // Calculate total risk percentage
+            $totalPercentage = 0;
+            foreach ($selectedOptions as $option) {
+                if (isset($riskPercentages[$option])) {
+                    $totalPercentage += $riskPercentages[$option];
+                }
+            }
+    
+            // Ensure the risk percentage is within a valid range (0 to 100)
+            $riskPercentage = max(0, min(100, $totalPercentage));
+    
+            return $riskPercentage;
         }
-
-        if ($yummy->Cytology=='0.0') {
-            echo "<p>Cytology is predicted to be negative</p>";
-         }
-        
-         elseif ($yummy->Cytology =='1.0') {
-            echo "<p>Cytology is predicted to be positive</p>";
-         }
-         if ($yummy->Schiller=='0.0') {
-            echo "<p>Schiller is predicted to be negative</p>";
-         }
-        
-         elseif ($yummy->Schiller =='1.0') {
-            echo "<p>Schiller is predicted to be positive</p>";
-         }
-         if ($yummy->Biopsy=='0.0') {
-            echo "<p>You may not require Biopsy</p>";
-         }
-        
-         elseif ($yummy->Biopsy =='1.0') {
-            echo "<p>You may require Biopsy</p>";
-         }
-
-    }
-     
-    else{
-        echo "<p>Please submit the form above to get a prediction.</p>";
-    }
-   
-    // else {
-    //     $yummy = json_decode($json1);
-    //     if ($yummy->pcos=='mb n') {
-    //        echo "<p>You may not be at the risk of PCOS</p>";
-    //     }
-       
-    //     elseif ($yummy->pcos == 'mb y') {
-    //        echo "<p>You may be at the risk of PCOS</p>";
-    //     }
-     
-
 ?>
                                 </div>
                             </div>
@@ -626,235 +419,107 @@
                                     you're at risk of PCOS or not.
                                 </p>
                                 <form class="pcos-form" method="post">
-                                    <div>
-                                        <h5>How would you describe the regularity of your periods?</h5>
-                                        <input type="radio" name="regularity" class="ques-radio" value="y">
-                                        <label class="ques-label">Regular</label>
-                                        <input type="radio" name="regularity" class="ques-radio" value="im">
-                                        <label class="ques-label" >Infrequent Menses</label>
-                                        <input type="radio" name="regularity" class="ques-radio" value="ib">
-                                        <label class="ques-label" >Irregular Bleeding</label>
-                                        <input type="radio" name="regularity" class="ques-radio" value="hb">
-                                        <label class="ques-label" >Heavy Bleeding</label>
-                                    </div>
-                                    <div>
-                                        <h5>Have you experienced rapid weight gain?</h5>
-                                        <input type="radio" name="weight" class="ques-radio" value="y">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="weight" class="ques-radio" value="n">
-                                        <label class="ques-label" >No</label>
-                                    </div>
-                                    <div>
-                                        <h5>Have you experienced excess hair growth on face, neck or chest?</h5>
-                                        <input type="radio" name="hair" class="ques-radio" value="y">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="hair" class="ques-radio" value="n">
-                                        <label class="ques-label" >No</label>
-                                    </div>
-                                    <div>
-                                        <h5>Do you have dark patches on skin?</h5>
-                                        <input type="radio" name="dark" class="ques-radio" value="y">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="dark" class="ques-radio" value="n">
-                                        <label class="ques-label" >No</label>
-                                    </div>
-                                    <div>
-                                        <h5>Do you have pimples often?</h5>
-                                        <input type="radio" name="pimples" class="ques-radio" value="y">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="pimples" class="ques-radio" value="n">
-                                        <label class="ques-label" >No</label>
-                                    </div>
-                                    <div>
-                                        <h5>Do you suffer from depression and anxiety?</h5>
-                                        <input type="radio" name="dora" class="ques-radio" value="y">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="dora" class="ques-radio" value="n">
-                                        <label class="ques-label" >No</label>
-                                    </div>
-                                    <div>
-                                        <h5>Do you have a family history of diabetes or hypertension?</h5>
-                                        <input type="radio" name="history" class="ques-radio" value="y">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="history" class="ques-radio" value="n">
-                                        <label class="ques-label" >No</label>
-                                    </div>
-                                    <div>
-                                        <h5>Do you face difficulty in maintaining a constant body weight?</h5>
-                                        <input type="radio" name="flow" class="ques-radio" value="n">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="flow" class="ques-radio" value="y">
-                                        <label class="ques-label" >No</label>
-                                    </div>
-                                    <div>
-                                        <h5>Do you have oily skin?</h5>
-                                        <input type="radio" name="oily" class="ques-radio" value="y">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="oily" class="ques-radio" value="n">
-                                        <label class="ques-label" >No</label>
-                                    </div>
-                                    <div>
-                                        <h5>Do you face hairfall?</h5>
-                                        <input type="radio" name="hairf" class="ques-radio" value="y">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="hairf" class="ques-radio" value="n">
-                                        <label class="ques-label" >No</label>
-                                    </div>
-                                    <div>
-                                        <h5>Which of the following is your frequent food intake?</h5>
-                                        <input type="radio" name="food" class="ques-radio" value=hm">
-                                        <label class="ques-label">Food prepared at home</label>
-                                        <input type="radio" name="food" class="ques-radio" value="cc">
-                                        <label class="ques-label" >Outside food</label>
-                                    </div>
-                                    <div>
-                                        <h5>Do you exercise regularly?</h5>
-                                        <input type="radio" name="exc" class="ques-radio" value="y">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="exc" class="ques-radio" value="n">
-                                        <label class="ques-label" >No</label>
-                                    </div>
-                                    <div>
-                                        <h5>Do you experience mental stress due to any recent changes in your life?</h5>
-                                        <input type="radio" name="change" class="ques-radio" value="y">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="change" class="ques-radio" value="n">
-                                        <label class="ques-label" >No</label>
-                                    </div>
-                                    <div>
-                                        <h5>Do you experience mental stress due to any personal problems?</h5>
-                                        <input type="radio" name="prob" class="ques-radio" value="y">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="prob" class="ques-radio" value="n">
-                                        <label class="ques-label" >No</label>
-                                    </div>
-                                    <div>
-                                        <h5>Do you experience mental stress due to peer pressure?</h5>
-                                        <input type="radio" name="peer" class="ques-radio" value="y">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="peer" class="ques-radio" value="n">
-                                        <label class="ques-label" >No</label>
-                                    </div>
-                                    <div>
-                                        <h5>Do you experience mental stress due to any change in dietary habits?</h5>
-                                        <input type="radio" name="diet" class="ques-radio" value="y">
-                                        <label class="ques-label">Yes</label>
-                                        <input type="radio" name="diet" class="ques-radio" value="n">
-                                        <label class="ques-label" >No</label>
-                                    </div>
-                                    <div>
-                                        <h5>How frequent is your fast-food intake?</h5>
-                                        <input type="radio" name="fast" class="ques-radio" value="ed">
-                                        <label class="ques-label">Every Day</label>
-                                        <input type="radio" name="fast" class="ques-radio" value="w">
-                                        <label class="ques-label" >Once in a week</label>
-                                        <input type="radio" name="fast" class="ques-radio" value="m">
-                                        <label class="ques-label" >Once in a month</label>
-                                        <input type="radio" name="fast" class="ques-radio" value="y">
-                                        <label class="ques-label" >Once in a year</label>
-                                    </div>
+                                <label>Select symptoms:</label><br>
+
+<div>
+    <input type="checkbox" name="selectedOptions[]" value="Overweight according to your BMI (Body Mass Index)">
+    <label>Overweight according to your BMI (Body Mass Index)</label>
+</div>
+
+<div>
+    <input type="checkbox" name="selectedOptions[]" value="Experiencing significant or rapid weight gain and facing difficulty in losing it">
+    <label>Experiencing significant or rapid weight gain and facing difficulty in losing it</label>
+</div>
+
+<div>
+    <input type="checkbox" name="selectedOptions[]" value="Experiencing irregular or missed periods">
+    <label>Experiencing irregular or missed periods</label>
+</div>
+
+<div>
+    <input type="checkbox" name="selectedOptions[]" value="Difficulty in conceiving">
+    <label>Difficulty in conceiving</label>
+</div>
+
+<div>
+    <input type="checkbox" name="selectedOptions[]" value="Acne or skin tags problem">
+    <label>Acne or skin tags problem</label>
+</div>
+
+<div>
+    <input type="checkbox" name="selectedOptions[]" value="Hair thinning or hair loss problems">
+    <label>Hair thinning or hair loss problems</label>
+</div>
+
+<div>
+    <input type="checkbox" name="selectedOptions[]" value="Dark patches on the back of your neck or underarms">
+    <label>Dark patches on the back of your neck or underarms</label>
+</div>
+
+<div>
+    <input type="checkbox" name="selectedOptions[]" value="Feeling of tiredness all the time">
+    <label>Feeling of tiredness all the time</label>
+</div>
+
+<div>
+    <input type="checkbox" name="selectedOptions[]" value="Mood Swings more often than usual">
+    <label>Mood Swings more often than usual</label>
+</div>
+
+<div>
+    <input type="checkbox" name="selectedOptions[]" value="Exercise more than twice a week">
+    <label>Exercise more than twice a week</label>
+</div>
+
+<div>
+    <input type="checkbox" name="selectedOptions[]" value="Eat outside more than twice a week">
+    <label>Eat outside more than twice a week</label>
+</div>
+
+<div>
+    <input type="checkbox" name="selectedOptions[]" value="Did you consume canned food more often">
+    <label>Did you consume canned food more often</label>
+</div>
+
                                     <button type="submit" class="btn btn-danger" id="predict-button" name="pcos-predict">Predict PCOS Possibility</button>
                                 </div>
                                 <div class="prediction-result">
                                 <?php
                                 // $json1=0;
     if(isset($_POST['pcos-predict'])){
-       
-      $o1= $_POST['regularity'];
-      $o2= $_POST['weight'];
-      $o3= $_POST['hair'];
-      $o4= $_POST['dark'];
-      $o5= $_POST['pimples'];
-      $o6= $_POST['dora'];
-      $o7= $_POST['history'];
-      $o8= $_POST['flow'];
-      $o9= $_POST['oily'];
-      $o10= $_POST['hairf'];
-      $o11= $_POST['food'];
-      $o12= $_POST['exc'];
-      $o13= $_POST['change'];
-      $o14= $_POST['prob'];
-      $o15= $_POST['peer'];
-      $o16= $_POST['diet'];
-      $o17= $_POST['fast'];
-      
-      
-     
-       $json1 =  file_get_contents('https://3ff03eccff14.ngrok.io/pcos/', false, stream_context_create([
-        'http' => [
-            'method' => 'POST',
-            'header'  => "Content-type: application/x-www-form-urlencoded",
-            'content' => http_build_query([
-            
-        'regular_periods' => 'no',
-        'rapid_weight_gain'=> $o2,
-        'excess_hair'=> $o3,
-        'dark_patches'=> $o4,
-        'pimples' => $o5,
-        'depression_and_anxiety'=> $o6,
-        'diabetic_hypertension_family_history'=> $o7,
-        'body_weight_maintain_difficulty'=> $o8,
-        'oily_skin'=> $o9,
-        'hair_strength_loss'=> $o10,
-        'eat_frequency'=> $o11,
-        'regular_excercise'=> $o12,
-        'sleep_time'=> '3:00am',
-        'wake_time'=> '7:30am',
-        'hostel_stress'=>  $o13,
-        'personal_stress'=> $o14,
-        'peer_pressure'=> $o15,
-        'dietary_stress'=> $o16,
-        'fast_food_frequency'=> $o17
-
-    //     'regular_periods' => 'no',
-    // 'rapid_weight_gain'=> $o2,
-    // 'excess_hair'=> 'y',
-    // 'dark_patches'=> 'y',
-    // 'pimples' => 'y',
-    // 'depression_and_anxiety'=> 'y',
-    // 'diabetic_hypertension_family_history'=> 'y',
-    // 'body_weight_maintain_difficulty'=> 'y',
-    // 'oily_skin'=> 'y',
-    // 'hair_strength_loss'=> 'n',
-    // 'eat_frequency'=> 'hm',
-    // 'regular_excercise'=> 'y',
-    // 'sleep_time'=> '3:00am',
-    // 'wake_time'=> '7:30am',
-    // 'hostel_stress'=> 'y',
-    // 'personal_stress'=> 'y',
-    // 'peer_pressure'=> 'y',
-    // 'dietary_stress'=> 'y',
-    // 'fast_food_frequency'=> 'y'
-            ])
-        ]
-    ]));
-
+        // Get the selected options
+        $selectedOptions = isset($_POST['selectedOptions']) ? $_POST['selectedOptions'] : array();
     
-    $yummy = json_decode($json1);
-        if ($yummy->pcos=='mb n') {
-           echo "<p>You may not be at the risk of PCOS</p>";
+        // Define the risk factors and their weights
+        $riskFactors = array(
+            "Overweight according to your BMI (Body Mass Index)" => 10,
+            "Experiencing significant or rapid weight gain and facing difficulty in losing it" => 15,
+            "Experiencing irregular or missed periods" => 20,
+            "Difficulty in conceiving" => 25,
+            "Acne or skin tags problem" => 10,
+            "Hair thinning or hair loss problems" => 15,
+            "Dark patches on the back of your neck or underarms" => 10,
+            "Feeling of tiredness all the time" => 10,
+            "Mood Swings more often than usual" => 10,
+            "Exercise more than twice a week" => 5,
+            "Eat outside more than twice a week" => 5,
+            "Did you consume canned food more often" => 5,
+        );
+    
+        // Calculate the total risk based on selected options
+        $totalRisk = 0;
+        foreach ($selectedOptions as $option) {
+            if (isset($riskFactors[$option])) {
+                $totalRisk += $riskFactors[$option];
+            }
         }
-       
-        elseif ($yummy->pcos =='mb y') {
-           echo "<p>You may be at the risk of PCOS</p>";
-        }
-
+    
+        // Calculate the percentage of risk
+        $percentageRisk = ($totalRisk / array_sum($riskFactors)) * 100;
+    
+        // Display the result
+        echo "The percentage of risk for PCOS based on your selected options is: " . round($percentageRisk, 2) . "%";
     }
-     
-    else{
-        echo "<p>Please submit the form above to get a prediction.</p>";
-    }
-   
-    // else {
-    //     $yummy = json_decode($json1);
-    //     if ($yummy->pcos=='mb n') {
-    //        echo "<p>You may not be at the risk of PCOS</p>";
-    //     }
-       
-    //     elseif ($yummy->pcos == 'mb y') {
-    //        echo "<p>You may be at the risk of PCOS</p>";
-    //     }
-     
 
 ?>
                                 </div>
