@@ -319,6 +319,22 @@ class _NearestGynecologistPageState extends State<NearestGynecologistPage> {
             'image': 'assets/img/doctor_profile2.png',
           },
           {
+            'name': 'Dr. Tanushree Pandey Padgaonka',
+            'specialization': 'IVF & PCOS Treatment',
+            'address': ' Lions Club Hopsital, Sion (W)',
+            'contact': '077770 82378',
+            'rating': '4.2',
+            'reviews': '90',
+            'workingHours': '10 AM - 6 PM',
+            'services': [
+              'Maternity care',
+              'Contraception counseling',
+              'Gynecological surgery'
+            ],
+            'languages': ['English', 'Marathi'],
+            'image': 'assets/img/doctor_profile2.png',
+          },
+          {
             'name': 'Dr. Patel',
             'specialization': 'Reproductive Endocrinology',
             'address': '789 Pine St, Villageland',
